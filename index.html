@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video src="Can't Hear You Now - Mike Shinoda (Official Video)-1080.mp4" class="video"></video>
+        <div class="play-button"></div>
+        <div class="controls">
+            <progress class="progress" value="0" min="0" max="100"></progress>
+            <div class="c-left-side">
+                <button class="c-play-button play"></button>
+                <span class="time">
+                    <span class="time-current">00:00</span> / <span class="time-duration">00:00</span>
+                </span>
+                <span class="speaker">&#x1F50A;</span>
+                <input type="range" id="volume" min="0" max="1" step="0.1">
+            </div>
+            <div class="c-right-side">
+                <span class="fullscreen-icon">&nearr;</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-container {
+    width: 880px;
+    height: 500px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.video {
+    width: 880px;
+    height: 500px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* .video::-webkit-media-controls {
+    display: none!important;
+} */
+
+.play-button {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-width: 32px 0 32px 64px;
+    border-color: transparent transparent transparent rgba(97, 106, 107, 0.8);
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.controls {
+    width: 100%;
+    height: 64px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.c-left-side {
+    position: relative;
+    height: 36px;
+    float: left;
+    /* display: table; */
+}
+
+.c-play-button {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 20px;
+    cursor: pointer;
+    float: left;
+    background: transparent;
+}
+
+.c-play-button:focus {
+    outline: none;
+}
+
+.c-play-button.play {
+    border-style: solid;
+    border-width: 12px 0 12px 24px;
+    border-color: transparent transparent transparent rgba(250, 250, 250, 0.8);
+}
+
+.c-play-button.pause {
+    border-style: double;
+    border-width: 0 20px 0 0;
+    border-color: transparent rgba(250, 250, 250, 0.8) transparent rgba(250, 250, 250, 0.8);
+}
+
+.speaker {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.time, .time-current, .time-duration {
+    /* vertical-align: top; */
+    height: 64px;
+}
+
+.time {
+    margin: 10px 15px;
+}
+
+.progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 95%;
+    height: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.progress:hover {
+    height: 6px;
+}
+
+.progress::-webkit-progress-value {
+    background: red;
+}
+
+.progress::-moz-progress-value {
+    background: red;
+}
+
+/* .progress::-webkit-progress-bar {
+    background: green;
+} */
+
+.c-right-side {
+    position: relative;
+    float: right;
+}
+
+.fullscreen-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: -10px 30px 15px 30px;
+    font-size: 36px;
+    /* vertical-align: top; */
+    cursor: pointer;
+}
